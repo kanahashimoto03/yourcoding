@@ -1,0 +1,39 @@
+.l-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: sticky;
+  height: 94px;
+  box-shadow: 0px 3px 6px #00000029;
+
+  &__inner {
+    padding: 35px 172px;
+  }
+
+  &__siteTitle {
+    width: 300px;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  &__logo {
+    width: 47px;
+    height: 47px;
+    margin-right: 16px;
+  }
+
+  &__nav {
+    align-items: center;
+
+    &__item {
+      margin-right: 46px;
+
+      &:nth-child(3) {
+        margin-right: 184px;
+      }
+    }
+  }
+}

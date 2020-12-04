@@ -190,7 +190,67 @@ img {
   vertical-align: bottom;
 }
 
-h1 {
-  color: aqua;
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 94px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.l-header__inner {
+  padding: 35px 172px;
+}
+
+.l-header__siteTitle {
+  width: 300px;
+}
+
+.l-header__siteTitle a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.l-header__logo {
+  width: 47px;
+  height: 47px;
+  margin-right: 16px;
+}
+
+.l-header__nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-header__nav__item {
+  margin-right: 46px;
+}
+
+.l-header__nav__item:nth-child(3) {
+  margin-right: 184px;
+}
+
+.c-button {
+  width: 155px;
+  height: 37px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#fa41cc), to(#6020b0));
+  background: linear-gradient(to right, #fa41cc, #6020b0);
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
