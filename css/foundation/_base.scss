@@ -9,5 +9,14 @@ img {
 
 .wrap {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.reserve {
+  flex-direction: row-reverse;
+}
+
+.inner {
+  padding: 0 172px;
 }
