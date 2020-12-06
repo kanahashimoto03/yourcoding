@@ -344,6 +344,7 @@ img {
   background-color: #eefbfb;
   height: 744px;
   width: 100%;
+  padding-top: 55px;
 }
 
 .p-price__table {
@@ -368,5 +369,14 @@ img {
 
 .p-price__table tr td {
   padding-right: 521px;
+}
+
+.p-faq {
+  text-align: center;
+  padding-top: 55px;
+}
+
+.p-faq__content {
+  width: 907px;
 }
 /*# sourceMappingURL=style.css.map */
