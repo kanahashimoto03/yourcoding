@@ -378,5 +378,22 @@ img {
 
 .p-faq__content {
   width: 907px;
+  margin: 32px auto 86px;
+}
+
+.p-faq__question {
+  height: 58px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.p-faq__answer {
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e5;
+  height: 70px;
+  padding-left: 35px;
+  text-align: left;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
