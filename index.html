@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YourCoding</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,48 +14,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   </head>
   <body>
-    <div class="l-fv">
-      <header class="l-header">
-        <div class="l-header__inner wrap">
-          <div class="l-header__siteTitle">
-            <a class="wrap" href="/">
-              <div class="l-header__logo">
-                <img src="./image/logo.png" alt="ロゴ" />
-              </div>
-              ユアコーディング
+    <header class="l-header">
+      <div class="l-header__inner wrap">
+          <div class="l-header__logo wrap">
+            <a href="/">
+              <img src="./image/logo.png" alt="ユアコーディング" />
             </a>
-          </div>
-          <div class="l-header__nav">
-            <nav class="wrap">
-              <ul class="l-header__nav__list wrap">
-                <li class="l-header__nav__item">特徴</li>
-                <li class="l-header__nav__item">価格</li>
-                <li class="l-header__nav__item">お問い合わせ</li>
-              </ul>
-              <button class="c-button">お問い合わせ</button>
-            </nav>
-          </div>
+              <h1 class="l-header__title">ユアコーディング</h1>
+          </div>        
+        <div class="l-header__nav">
+          <nav class="wrap">
+            <ul class="l-header__nav__list wrap">
+              <li class="l-header__nav__item"><a href="">特徴</a></li>
+              <li class="l-header__nav__item"><a href="">価格</a></li>
+              <li class="l-header__nav__item"><a href="">お問い合わせ</a></li>
+            </ul>
+            <button class="c-button">お問い合わせ</button>
+          </nav>
         </div>
-      </header>
-      <div class="wrap">
-        <div class="l-fv__text">
-          <h1 class="c-fv__title">
-            コーディングの手間を最小に、デザインに注力する助けに
-          </h1>
-          <p class="c-fv__subTitle">
+      </div>
+    </header>
+    <section class="l-main">
+      <div class="l-main__inner">
+        <div class="l-main__text">
+          <h2 class="l-main__title">
+            コーディングの手間を<br>最小に、デザインに注力<br>する助けに
+          </h2>
+          <p class="l-main__subTitle">
             ユアコーディングはコーディングに<br />特化したフリーランス<br />デザインに注力されたい方の<br />助けになります
           </p>
           <button class="c-button">お問い合わせ</button>
         </div>
-        <div class="l-fv__img">
-          <img src="./image/main.png" alt="" />
+        <div class="l-main__img">
+          <img src="./image/main.png" alt="メインイメージ" />
         </div>
       </div>
-    </div>
+    </section>
     <section class="p-features">
       <h2 class="c-section__title">ユアコーディング3つの特徴</h2>
       <p class="c-section__title__en">FEATURES</p>
-      <div class="inner">
+      <div class="p-features__inner">
         <div class="p-features__container">
           <h3 class="p-features__title">高速コーディング</h3>
           <div class="wrap">
@@ -121,7 +120,7 @@
     <section class="p-price">
       <div class="c-section__title">価格</div>
       <div class="c-section__title__en">PRICE</div>
-      <div class="inner">
+      <div class="p-price__inner">
         <table class="p-price__table">
           <tr>
             <th>HTMLコーディングトップページ</th>
@@ -146,7 +145,7 @@
     <section class="p-faq">
       <div class="c-section__title">よくある質問</div>
       <div class="c-section__title__en">FAQ</div>
-      <div class="inner">
+      <div class="p-faq__inner">
         <div class="p-faq__content">
           <div class="p-faq__question">
             デザインから一貫してお願いすることは可能でしょうか
@@ -171,7 +170,7 @@
     <section class="p-blog">
       <div class="c-section__title">ブログ</div>
       <div class="c-section__title__en">BLOG</div>
-      <div class="p-blog__cat">
+      <div class="p-blog__inner">
         <ul class="p-blog__list">
           <li class="p-blog__item">
             <div class="p-blog__item__img">
@@ -231,7 +230,7 @@
             <img src="./image/slider2.jpg" alt="" />
             <div class="swiper-slide__text">
               <div class="swiper-slide__text__sentence">
-                株式会社サンプル様採用サイトのコーデ ィングを行いました！
+                株式会社サンプル様採用サイトのコーディングを行いました！
               </div>
               採用技術：jQuery,Bootstrap4<br>実装期間：2週間<br>担当コーダー：石井
             </div>
@@ -252,7 +251,7 @@
       <div class="c-section__title">お問い合わせ</div>
       <div class="c-section__title__en">CONTACT</div>
       <div class="c-section__title__sub">コーディングの人出が足りないとき、<br>あなたの力になります</div>
-      <div class="inner">
+      <div class="p-contact__inner">
         <form action="form" class="p-contact__form">
           <label for="name">お名前<span>必須</span></label>
           <input type="text" class="p-contact__form__text" name="name" id="name">
@@ -269,6 +268,17 @@
 
       </div>
     </section>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <p class="l-footer__title">ユアコーディング</p>
+        <div class="l-footer__privacy">
+          <p>プライバシポリシー</p>
+          <p>個人商取引法に基づく表記</p>
+        </div>
+        &copy;ユアコーディング, All Rights Reserved.
+      </div>
+    </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>

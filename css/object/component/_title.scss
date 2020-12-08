@@ -1,23 +1,13 @@
-.c-fv__title {
-  font-size: 32px;
-  color: $text-color;
-  margin-bottom: 44px;
-  width: 351px;
-  height: 138px;
-}
-
-.c-fv__subTitle {
-  font-size: 16px;
-  color: $text-color;
-  margin-bottom: 53px;
-}
-
 .c-section__title {
   font-size: 32px;
   margin-bottom: 10px;
+  padding-top: 55px;
+  font-weight: bold;
+  line-height: 1.4;
 
   &__en {
     font-size: 16px;
     color: #3ba6c9;
+    line-height: 1.5;
   }
 }

@@ -1,9 +1,17 @@
 .p-faq {
+  width: 100%;
   text-align: center;
   padding-top: 55px;
 
+  &__inner {
+    max-width: 1022px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+  }
+
   &__content {
-    width: 907px;
+    width: 100%;
     margin: 32px auto 86px;
   }
 
