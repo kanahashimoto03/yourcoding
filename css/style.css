@@ -213,6 +213,30 @@ img {
   padding: 0 172px;
 }
 
+.fv-fade {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fv-fade.loadin {
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fade.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .l-header {
   top: 0;
   width: 100%;

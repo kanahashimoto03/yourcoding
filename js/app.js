@@ -33,3 +33,20 @@ var mySwiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+/* フェードイン */
+
+$(window).on("load", function () {
+  $(".fv-fade").addClass("loadin");
+});
+
+$(window).on("scroll", function () {
+  $(".fade").each(function () {
+    let windowHeight = $(window).height();
+    let scroll = $(window).scrollTop();
+    let position = $(this).offset().top;
+    if (scroll > position - windowHeight + 150) {
+      $(this).addClass("scrollin");
+    }
+  });
+});

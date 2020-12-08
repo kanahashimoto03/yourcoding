@@ -20,3 +20,23 @@ img {
 .inner {
   padding: 0 172px;
 }
+
+.fv-fade {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.fv-fade.loadin {
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 1s;
+}
+
+.fade.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
