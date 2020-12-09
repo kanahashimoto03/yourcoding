@@ -1,3 +1,23 @@
+/* ==================================
+// メディアクエリ
+===================================== */
+
+@mixin pc-layout($width: 1001px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin tab-layout($width: 1000px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin sp-layout($width: 576px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -11,6 +31,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include sp-layout() {
+    display: block;
+  }
 }
 
 .reserve {
@@ -20,6 +44,10 @@ img {
 .inner {
   padding: 0 172px;
 }
+
+/* ==================================
+// フェードイン
+===================================== */
 
 .fv-fade {
   opacity: 0;

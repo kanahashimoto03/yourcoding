@@ -1,3 +1,10 @@
+/* バーガーボタン */
+$(".burger__btn").on("click", function () {
+  $(".bar").toggleClass("cross");
+  $(".l-header__nav").toggleClass("open");
+  $("body").toggleClass("noscroll");
+});
+
 /* faq アコーディオン*/
 $(function () {
   $(".p-faq__item").click(function () {
@@ -25,11 +32,11 @@ var mySwiper = new Swiper(".swiper-container", {
     disableOnInteraction: false,
     reverseDirection: false,
   },
-
   breakpoints: {
     767: {
+      centeredSlides: true,
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
   },
 });
@@ -45,7 +52,7 @@ $(window).on("scroll", function () {
     let windowHeight = $(window).height();
     let scroll = $(window).scrollTop();
     let position = $(this).offset().top;
-    if (scroll > position - windowHeight + 150) {
+    if (scroll > position - windowHeight) {
       $(this).addClass("scrollin");
     }
   });

@@ -23,6 +23,10 @@
     p {
       font-size: 16px;
       font-weight: bold;
+
+      @include sp-layout() {
+        font-size: 14px;
+      }
     }
   }
 }

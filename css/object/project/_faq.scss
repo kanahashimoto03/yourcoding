@@ -13,6 +13,10 @@
   &__content {
     width: 907px;
     margin: 32px auto 86px;
+
+    @include sp-layout() {
+      width: auto;
+    }
   }
 
   &__question {
@@ -23,6 +27,10 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 18px;
+
+    @include sp-layout() {
+      padding: 20px 4vw 18px;
+    }
   }
 
   &__answer {
@@ -33,6 +41,10 @@
     text-align: left;
     padding: 23px 87px 27px 35px;
     display: none;
+
+    @include sp-layout() {
+      padding: 23px 4vw 23px;
+    }
   }
 
   &__answer.open {

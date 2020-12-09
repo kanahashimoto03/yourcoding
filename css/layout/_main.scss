@@ -7,15 +7,34 @@
   height: 768px;
   z-index: -1000;
 
+  @include sp-layout {
+    width: 100%;
+  }
+
   &__inner {
     max-width: 1022px;
     margin-left: auto;
     margin-right: auto;
     padding: 250px 20px;
+
+    @include sp-layout {
+      padding: 0 20px;
+    }
   }
 
   &__text {
     text-align: left;
+
+    @include sp-layout() {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .c-button {
+      @include sp-layout() {
+        margin: 0 auto 20px;
+      }
+    }
   }
 
   &__title {
@@ -23,6 +42,13 @@
     line-height: 1.4;
     margin-bottom: 44px;
     font-weight: bold;
+
+    @include sp-layout() {
+      font-size: 26px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
   }
 
   &__subTitle {
@@ -30,6 +56,10 @@
     line-height: 1.5;
     margin-bottom: 45px;
     font-weight: bold;
+
+    @include sp-layout() {
+      margin-bottom: 20px;
+    }
   }
 
   &__img {
@@ -38,5 +68,11 @@
     height: 430px;
     top: 225px;
     right: 172px;
+
+    @include sp-layout() {
+      position: static;
+      width: 330px;
+      height: 330px;
+    }
   }
 }

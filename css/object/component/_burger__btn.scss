@@ -1,0 +1,51 @@
+.burger__btn {
+  display: none;
+
+  @include sp-layout() {
+    display: block;
+    background: transparent;
+    height: 40px;
+    width: 45px;
+    border: solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .bar {
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    border-radius: 1px;
+  }
+
+  .bar-top {
+    transform: translateY(-4px);
+    transition: transform 0.3s;
+  }
+  .bar-bottom {
+    transform: translateY(4px);
+    transition: transoform 0.3s;
+  }
+
+  /*開いた時のボタン*/
+
+  .bar.cross.bar-top {
+    transform: translateY(2px) rotate(30deg);
+    transition: transform 0.3s;
+  }
+
+  .bar.cross.bar-mid {
+    opacity: 0;
+    transition: transform 0.3s;
+  }
+
+  .bar.cross.bar-bottom {
+    transform: translateY(-2px) rotate(-30deg);
+    transition: transform 0.3s;
+  }
+}
+
+.l-header__nav.open {
+  opacity: 1;
+}

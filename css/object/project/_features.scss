@@ -16,14 +16,27 @@
   &__title {
     font-size: 28px;
     margin-bottom: 61px;
+
+    @include sp-layout() {
+      font-size: 20px;
+    }
   }
   &__text {
     text-align: left;
+
+    @include sp-layout() {
+      margin-top: 20px;
+    }
+
     h4 {
       font-size: 24px;
       margin-bottom: 45px;
       line-height: 2;
       font-weight: bold;
+
+      @include sp-layout() {
+        font-size: 20px;
+      }
     }
     p {
       font-size: 16px;

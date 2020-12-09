@@ -24,6 +24,10 @@
       padding: 35px 19px;
       min-width: 300px;
       font-size: 16px;
+
+      @include sp-layout() {
+        min-width: 0;
+      }
     }
 
     td {
