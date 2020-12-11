@@ -575,13 +575,15 @@ img {
 .burger__btn .bar-bottom {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
-  -webkit-transition: transoform 0.3s;
-  transition: transoform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger__btn .bar.cross.bar-top {
-  -webkit-transform: translateY(2px) rotate(30deg);
-          transform: translateY(2px) rotate(30deg);
+  -webkit-transform: translateY(2px) rotate(-30deg);
+          transform: translateY(2px) rotate(-30deg);
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -597,8 +599,8 @@ img {
 }
 
 .burger__btn .bar.cross.bar-bottom {
-  -webkit-transform: translateY(-2px) rotate(-30deg);
-          transform: translateY(-2px) rotate(-30deg);
+  -webkit-transform: translateY(-2px) rotate(30deg);
+          transform: translateY(-2px) rotate(30deg);
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;

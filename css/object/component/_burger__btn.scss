@@ -31,7 +31,7 @@
   /*開いた時のボタン*/
 
   .bar.cross.bar-top {
-    transform: translateY(2px) rotate(30deg);
+    transform: translateY(2px) rotate(-30deg);
     transition: transform 0.3s;
   }
 
@@ -41,7 +41,7 @@
   }
 
   .bar.cross.bar-bottom {
-    transform: translateY(-2px) rotate(-30deg);
+    transform: translateY(-2px) rotate(30deg);
     transition: transform 0.3s;
   }
 }
